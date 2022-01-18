@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\TestRequest;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
@@ -17,9 +18,7 @@ class UsersController extends Controller
         return view('users', compact('username'));
     }
 
-    public function test()
+    public function test(TestRequest $request)
     {
-        //return  response()->json(["name" => 'joaocolussi']);
-        return redirect(route('user-profile', ['username' => 'joaohe4rt']));
     }
 }

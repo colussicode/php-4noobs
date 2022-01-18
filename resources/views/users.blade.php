@@ -9,9 +9,7 @@
 </head>
 <body>
 <marquee>
-<?php
-echo $username;
-?>
+    {{ $username  }}}
 </marquee>
 </body>
 </html>
